@@ -1,0 +1,121 @@
+{
+  "titlePage": {
+    "title": "Ice and Fire Art",
+    "logoImagePath": "assets/images/logo.PNG",
+    "transparentLogoImagePath": "assets/images/transparent-logo.PNG",
+    "bgImagePath": "assets/videos/logo-movie.mov",
+    "fontColor": "#F0EEEE",
+    "slogan": "painting · travel · spirituality · coffee",
+    "about": "Just a couple of artists who like Game of Thrones and each other... most of the time :P",
+    "email": "iceandfireart@gmail.com",
+    "links": [
+      {
+        "name": "Etsy",
+        "link": "https://www.etsy.com/shop/iceandfirestudio",
+        "icon": "faEtsy"
+      },
+      {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/iceandfire.art/",
+        "icon": "faInstagram"
+      },
+      {
+        "name": "TikTok",
+        "link": "https://www.tiktok.com/@iceandfire.art",
+        "icon": "faTiktok"
+      }
+    ]
+  },
+  "collections": [
+    {
+      "name": "Iceland",
+      "pieces": [
+        {
+          "name": "To the Lagoon",
+          "imagePath": "assets/images/tothelagoon.webp",
+          "description": "Blue Lagoon in Iceland - Acrylic on Canvas",
+          "artist": "Clara",
+          "year": 2025,
+          "links": [
+            {
+              "store": "Instagram",
+              "type": "",
+              "url": "https://www.instagram.com/p/DKAlIdXpGBl/?img_index=1"
+            },
+            {
+              "store": "Etsy",
+              "type": "Digital Download",
+              "url": "https://www.etsy.com/listing/4308423308"
+            }
+          ]
+        }
+      ]
+    }, {
+      "name": "Travel",
+      "pieces": [
+        {
+          "name": "DND",
+          "imagePath": "assets/images/dnd.webp",
+          "description": "Do not Disturb & Leave Worries Behind - Acrylic on Canvas",
+          "artist": "Clara",
+          "year": 2025,
+          "links": [
+            {
+              "store": "Etsy",
+              "type": "Digital Download",
+              "url": "https://www.etsy.com/listing/4315304364/"
+            }
+          ]
+        },
+        {
+          "name": "Awake",
+          "imagePath": "assets/images/awake.webp",
+          "description": "Reflective Travel Moment - Acrylic on Canvas",
+          "artist": "Clara",
+          "year": 2025,
+          "links": [
+            {
+              "store": "Etsy",
+              "type": "Digital Download",
+              "url": "https://www.etsy.com/listing/4315221471/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "artists": [
+    {
+      "name": "Clara",
+      "age": 24,
+      "bio": "Hi, I'm Clara! I moved from Connecticut to Texas after college to pursue my passion for art and design. I love painting with vibrant colors and shapes to evoke comfort and tranquility. I'm also a practitioner of yoga, mediation, and other methods of spiritual awakening. I hope my practices transfer to my art to bring you piece and zen.",
+      "imagePaths": [
+        "assets/images/clara-1.HEIC",
+        "assets/images/clara-2.HEIC",
+        "assets/images/clara-3.HEIC",
+        "assets/images/clara-4.JPG",
+        "assets/images/clara-6.JPG",
+        "assets/images/clara-7.JPG",
+        "assets/images/clara-8.JPG"
+      ]
+    }, {
+      "name": "Gregory",
+      "age": 25,
+      "bio": "Hi, I'm Gregory! I grew up in Texas and have been an artist my whole life. I'm so excited to share this journey with Clara (my favorite person and my favorite artist too)! I focus on detail and light in my paintings. I really enjoy fantasy such as Game of Thrones, Lord of the Rings, and anime. I hope my art arouses your imagination and inspires you to explore your own creativity.",
+      "imagePaths": [
+        "assets/images/greg-1.JPG",
+        "assets/images/greg-2.HEIC",
+        "assets/images/greg-3.jpg",
+        "assets/images/greg-4.heic",
+        "assets/images/greg-5.heic",
+        "assets/images/greg-6.HEIC",
+        "assets/images/greg-7.JPG"
+      ]
+    }
+  ],
+  "commissions": {
+    "info": "We are currently accepting commissions! If you have an idea for a piece of art, please reach out to us via email or Instagram. We would love to work with you to create something special.",
+    "note": "Please specify which artist you would like to work with you on your masterpiece (Clara, Greg, or both!)",
+    "timeline": "We will reach out with progress updates along with way, first being an initial sketch for your approval. Please note that we are not full-time artists (yet, hopefully) so the timeline is dependent on our schedule but we will work diligently to complete your piece in a timely manner!"
+  }
+}
