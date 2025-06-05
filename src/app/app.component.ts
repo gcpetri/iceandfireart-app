@@ -6,6 +6,7 @@ import { TitlePageComponent } from './title-page/title-page.component';
 import { ArtistsComponent } from './artists/artists.component';
 import { CommissionsComponent } from './commissions/commissions.component';
 import { FooterComponent } from './footer/footer.component';
+import { baseHref } from './constants';
 
 @Component({
   selector: 'app-root',
@@ -27,7 +28,7 @@ export class AppComponent {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get('/assets/config.json').subscribe(data => {
+    this.http.get('assets/config.json').subscribe(data => {
       this.config.set(data as Config);
     });
   }
