@@ -16,6 +16,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/iceandfireart/",
             "outputPath": "dist/iceandfireart-app",
             "index": "src/index.html",
             "main": "src/main.ts",

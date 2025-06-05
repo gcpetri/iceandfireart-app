@@ -1,0 +1,56 @@
+# Angular build output
+/dist/
+/out-tsc/
+/.angular/cache/
+
+# Environment files
+/src/environments/environment*.ts
+
+# Dependency directories
+/node_modules/
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Compiled files and logs
+*.log
+*.tsbuildinfo
+
+# NPM & Yarn
+package-lock.json
+yarn.lock
+
+# Coverage reports
+/coverage/
+
+# Temporary files
+/tmp/
+/temp/
+/*.tmp
+*.swp
+*.bak
+
+# Testing
+/test-output/
+/test-results.xml
+/karma*.json
+
+# Misc
+*.orig
+*.rej
+
+# Optional: if you use Cypress or Playwright for E2E
+cypress/videos/
+cypress/screenshots/
+playwright-report/
+test-results/
+
+# Optional: if using SonarQube
+/.scannerwork/

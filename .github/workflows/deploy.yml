@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - main
+
+permissions:
+  contents: write  # Needed to push to gh-pages
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -16,13 +20,13 @@ jobs:
           node-version: '22'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build the application
-        run: npm run build -- --prod --output-path=dist
+        run: npm run build -- --base-href /iceandfireart/
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./dist/iceandfireart
