@@ -1,0 +1,45 @@
+<div class="modal fade" id="pieceModal" tabindex="-1" aria-labelledby="pieceModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <div class="container">
+          <div class="row">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">{{ piece()?.name ?? 'Could not find piece' }}</h1>
+          </div>
+          <div class="row" style="height: 20px">
+            <p class="text-lowercase my-0">by {{ piece()?.artist }}</p>
+          </div>
+        </div>
+        <button type="button" class="btn-close pe-4" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      @let _piece = piece();
+      @if (_piece) {
+        <div class="modal-body border-0">
+          <div class="row">
+            <img [src]="_piece.imagePath" class="card-img-top" alt="...">
+          </div>
+          <div class="row">
+            <p class="mb-0 mt-4">{{ _piece.year }}</p>
+            <p>{{ _piece.description }}</p>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <div class="row justify-content-around">
+            @for (link of _piece.links; track $index) {
+              <div class="col-auto pe-0">
+                <a
+                  href="{{ link.url }}"
+                  target="_blank"
+                  class="btn icon-link"
+                  [style.background-color]="colorMap[link.store]"
+                >
+                  <fa-icon [icon]="iconMap[link.store]"></fa-icon>{{ link.type.length > 0 ? '&nbsp;&nbsp;' + link.type : '' }}
+                </a>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container-fluid collections-container py-4">
+  <h1 >Collections</h1>
+  @for (collection of collections(); track $index) {
+    <div class="collection py-2">
+      <h4>{{ collection.name }}</h4>
+      <div class="row align-items-start">
+        @for (piece of collection.pieces; track $index) {
+          <div class="col-6 col-sm-4 col-lg-3 mb-2 sm-mb-3 lg-mb-4">
+            <div
+              class="card"
+              data-bs-toggle="modal"
+              data-bs-target="#pieceModal"
+              (click)="selectPiece(piece)"
+            >
+              <img [src]="piece.imagePath" class="card-img-top" alt="...">
+              <div class="title">
+                {{ piece.name }}
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  }
+</div>
+
+<app-piece [piece]="selectedPiece()"></app-piece>

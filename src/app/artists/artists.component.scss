@@ -1,0 +1,51 @@
+@use 'variables' as vars;
+
+.artist-row {
+  margin-bottom: 2.5rem;
+}
+
+.artist-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.artist-age {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #888;
+}
+
+.artist-bio {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.artist-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  background: #fff;
+  transition: box-shadow 0.3s;
+}
+
+@media (max-width: 767.98px) {
+  .artist-img {
+    margin-bottom: 1.5rem;
+    width: 150px;
+    height: 150px;
+  }
+  .artist-row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+}
+
+.clara-img {
+  box-shadow: 8px 8px vars.$secondary;
+}
+
+.greg-img {
+  box-shadow: 8px 8px vars.$primary;
+}

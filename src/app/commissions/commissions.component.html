@@ -1,0 +1,28 @@
+<div class="container-fluid py-4 px-md-4 commissions-container">
+  <h1 class="mt-4 pb-4">Commissions</h1>
+  <div class="row pb-4">
+    <div class="col">
+      <p class="fs-5 mb-4">
+        {{ commissions().info }}
+      </p>
+      <div class="mb-3">
+        <span class="fw-semibold" style="font-size: 1.15rem;">
+          <fa-icon [icon]="faInfoCircle" class="me-2"></fa-icon>
+          Note &nbsp;
+        </span>
+        <span style="font-size: 1.05rem;">
+          {{ commissions().note }}
+        </span>
+      </div>
+      <div>
+        <span class="fw-semibold" style="font-size: 1.15rem;">
+          <fa-icon [icon]="faClock" class="me-2"></fa-icon>
+          Timeline &nbsp;
+        </span>
+        <span style="font-size: 1.05rem;">
+          {{ commissions().timeline }}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

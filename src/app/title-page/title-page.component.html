@@ -1,0 +1,26 @@
+@let _config = config();
+<div class="d-flex flex-column min-vh-100 title-page-container">
+  <div class="flex-grow-1 d-flex justify-content-center align-items-center text-center px-3">
+    <div>
+      <img src="{{ _config.logoImagePath }}" alt="Logo" class="img-fluid mb-3">
+    </div>
+  </div>
+  <div class="title-page-slogan mb-4">
+    <h4 class="line-1 anim-typewriter">{{ _config.slogan }}</h4>
+  </div>
+  <div class="py-5 text-center title-page-info">
+    <div class="container">
+      <p class="title-page-about">{{ _config.about }}</p>
+      <p class="title-page-email"><fa-icon [icon]="faEnvelope"></fa-icon>&nbsp; {{ _config.email }}</p>
+      <div class="row justify-content-center">
+        @for (social of _config.links; track $index) {
+          <div class="col-auto px-4">
+            <a href="{{ social.link }}" target="_blank" class="text-decoration-none text-dark">
+              <fa-icon [icon]="iconMap[social.name]"></fa-icon>
+            </a>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+@use 'variables' as vars;
+
+.footer-container {
+  background: vars.$primary;
+  color: whitesmoke;
+}
+
+fa-icon {
+  color: whitesmoke;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 200px;
+  height: auto;
+}

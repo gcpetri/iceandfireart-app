@@ -1,0 +1,28 @@
+@let _config = config();
+<div class="container-fluid pb=2 px-md-4 footer-container">
+  <div class="row align-items-center">
+    <div class="col text-md-start text-center mb-md-0">
+      <div class="row">
+        @for (social of _config.links; track $index) {
+          <div class="col-12 col-md-auto mb-2 px-4">
+            <a href="{{ social.link }}" target="_blank" class="text-decoration-none">
+              <fa-icon [icon]="iconMap[social.name]"></fa-icon>&nbsp;&nbsp;{{ social.name }}
+            </a>
+          </div>
+          @if (!$last) {
+            <div class="d-none d-md-flex col-auto">
+              ·
+            </div>
+          }
+        }
+      </div>
+    </div>
+    <div class="col-md-4 col-12 d-flex justify-content-center">
+      <img
+        src="{{ _config.transparentLogoImagePath }}"
+        alt="..."
+        class="logo-img shadow-glow"
+      >
+    </div>
+  </div>
+</div>

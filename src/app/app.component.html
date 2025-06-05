@@ -1,0 +1,9 @@
+@if (config()) {
+  <app-title-page [config]="config().titlePage"></app-title-page>
+  <app-collections [collections]="config().collections"></app-collections>
+  <app-artists [artists]="config().artists"></app-artists>
+  <app-commissions [commissions]="config().commissions"></app-commissions>
+  <app-footer [config]="config().titlePage"></app-footer>
+} @else {
+  Could not load configuration.
+}

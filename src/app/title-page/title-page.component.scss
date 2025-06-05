@@ -1,0 +1,121 @@
+@use 'variables' as vars;
+
+.title-page-container {
+  color: whitesmoke;
+  background: vars.$primary;
+  animation: bg-fade 8s ease-in-out infinite alternate;
+
+  img {
+    width: 600px;
+  }
+
+  @media screen and (min-width: 500px) and (max-width: 850px) {
+    img {
+      width: 400px;
+    }
+  }
+}
+
+@keyframes bg-fade {
+  from {
+    background: vars.$primary;
+  }
+  to {
+    background: vars.$secondary;
+  }
+}
+
+.title-page-info {
+  color: vars.$dark;
+  position: relative;
+  background: vars.$light;
+  
+  .top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  fa-icon {
+    color: vars.$dark;
+  }
+}
+
+.line-1{
+  font-size: 1.25rem;
+  position: relative;
+  top: 50%;  
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(46) 1s 1 normal both,
+             blinkTextCursor 500ms steps(46) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 26em;}
+}
+
+@media (min-width: 650px) and (max-width: 850px) {
+  .line-1 {
+    font-size: 1rem;
+    width: 96vw;
+    font-size: 150%;
+    max-width: 100vw;
+  }
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 96vw; }
+  }
+}
+
+@media (min-width: 545px) and (max-width: 650px) {
+  .line-1 {
+    font-size: 0.9rem;
+    width: 96vw;
+    font-size: 120%;
+    max-width: 100vw;
+  }
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 96vw; }
+  }
+}
+
+@media (min-width: 386px) and (max-width: 545px) {
+  .line-1 {
+    font-size: 0.9rem;
+    width: 96vw;
+    max-width: 100vw;
+  }
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 96vw; }
+  }
+}
+
+@media (max-width: 386px) {
+  .line-1 {
+    font-size: 0.75rem;
+    width: 96vw;
+    max-width: 100vw;
+  }
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 96vw; }
+  }
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}

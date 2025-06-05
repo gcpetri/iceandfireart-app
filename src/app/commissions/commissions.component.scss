@@ -1,0 +1,10 @@
+@use 'variables' as vars;
+
+.commissions-container {
+  background: vars.$primary;
+  color: whitesmoke;
+}
+
+fa-icon {
+  color: whitesmoke;
+}

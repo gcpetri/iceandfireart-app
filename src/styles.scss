@@ -1,0 +1,39 @@
+@use 'variables' as vars;
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+$theme-colors: (
+  "primary":    vars.$primary,
+  "secondary":  vars.$secondary,
+  "success":    vars.$success,
+  "info":       vars.$info,
+  "warning":    vars.$warning,
+  "danger":     vars.$danger,
+  "light":      vars.$light,
+  "dark":       vars.$dark
+);
+
+:root {
+  font-family: 'Roboto', sans-serif;
+
+  --bs-primary: #{vars.$primary};
+  --bs-secondary: #{vars.$secondary};
+  --bs-info: #{vars.$info};
+  --bs-success: #{vars.$success};
+  --bs-warning: #{vars.$warning};
+  --bs-danger: #{vars.$danger};
+  --bs-light: #{vars.$light};
+  --bs-dark: #{vars.$dark};
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Mono', monospace;
+    --bs-body-font-family: 'Roboto Mono', monospace !important;
+  }
+}
