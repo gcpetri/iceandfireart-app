@@ -32,7 +32,7 @@
       "pieces": [
         {
           "name": "To the Lagoon",
-          "imagePath": "assets/images/tothelagoon.webp",
+          "imagePath": "assets/images/art/tothelagoon.webp",
           "description": "Blue Lagoon in Iceland - Acrylic on Canvas",
           "artist": "Clara",
           "year": 2025,
@@ -54,8 +54,22 @@
       "name": "Travel",
       "pieces": [
         {
+          "name": "Window Seat Dreaming",
+          "imagePath": "assets/images/art/window-seat-dreaming.webp",
+          "description": "Stay wondering - Acrylic on Canvas",
+          "artist": "Clara",
+          "year": 2025,
+          "links": [
+            {
+              "store": "Etsy",
+              "type": "Poster Print",
+              "url": "https://www.etsy.com/listing/4320715891/"
+            }
+          ]
+        },
+        {
           "name": "DND",
-          "imagePath": "assets/images/dnd.webp",
+          "imagePath": "assets/images/art/dnd.webp",
           "description": "Do not Disturb & Leave Worries Behind - Acrylic on Canvas",
           "artist": "Clara",
           "year": 2025,
@@ -69,8 +83,8 @@
         },
         {
           "name": "Awake",
-          "imagePath": "assets/images/awake.webp",
-          "description": "Reflective Travel Moment - Acrylic on Canvas",
+          "imagePath": "assets/images/art/awake.webp",
+          "description": "When you can't sleep - Acrylic on Canvas",
           "artist": "Clara",
           "year": 2025,
           "links": [
@@ -78,6 +92,52 @@
               "store": "Etsy",
               "type": "Digital Download",
               "url": "https://www.etsy.com/listing/4315221471/"
+            }
+          ]
+        },
+        {
+          "name": "Getaway",
+          "imagePath": "assets/images/art/getaway.jpg",
+          "description": "Words to inspire the adventure - Acrylic on Canvas",
+          "artist": "Clara",
+          "year": 2025,
+          "links": [
+            {
+              "store": "Etsy",
+              "type": "Digital Download",
+              "url": "https://www.etsy.com/listing/4320183838/"
+            }
+          ]
+        },
+        {
+          "name": "New Horizons",
+          "imagePath": "assets/images/art/new-horizons.jpg",
+          "description": "Looking out the window in awe - Acrylic on Canvas",
+          "artist": "Clara",
+          "year": 2025,
+          "links": [
+            {
+              "store": "Etsy",
+              "type": "Digital Download",
+              "url": "https://www.etsy.com/listing/4320165574/"
+            }
+          ]
+        }
+      ]
+    },{
+      "name": "Fantasy",
+      "pieces": [
+        {
+          "name": "Shadow and Flame",
+          "imagePath": "assets/images/art/shadow-and-flame.webp",
+          "description": "A Balrog of Morgoth is coming for the Fellowship - Acrylic on Canvas",
+          "artist": "Gregory",
+          "year": 2025,
+          "links": [
+            {
+              "store": "Etsy",
+              "type": "Poster Print",
+              "url": "https://www.etsy.com/listing/4320732650/"
             }
           ]
         }
