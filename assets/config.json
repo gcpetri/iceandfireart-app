@@ -39,13 +39,37 @@
           "links": [
             {
               "store": "Instagram",
-              "type": "",
+              "type": null,
               "url": "https://www.instagram.com/p/DKAlIdXpGBl/?img_index=1"
             },
             {
               "store": "Etsy",
               "type": "Digital Download",
-              "url": "https://www.etsy.com/listing/4308423308"
+              "url": "https://www.etsy.com/listing/4308423308/"
+            }
+          ]
+        },
+        {
+          "name": "Diamond On the Beach",
+          "imagePath": "assets/images/art/diamond-on-the-beach.webp",
+          "description": "Diamond On the Beach - Acrylic on Canvas",
+          "artist": "Gregory",
+          "year": 2025,
+          "links": [
+            {
+              "store": "Etsy",
+              "type": "Poster Print",
+              "url": "https://www.etsy.com/listing/4323386422/"
+            },
+            {
+              "store": "Etsy",
+              "type": "Graphic Tee (Color)",
+              "url": "https://www.etsy.com/listing/4323353899/"
+            },
+            {
+              "store": "Etsy",
+              "type": "Graphic Tee (White)",
+              "url": "https://www.etsy.com/listing/4323363514/"
             }
           ]
         }
@@ -64,6 +88,11 @@
               "store": "Etsy",
               "type": "Poster Print",
               "url": "https://www.etsy.com/listing/4320715891/"
+            },
+            {
+              "store": "Etsy",
+              "type": "Graphic Tee",
+              "url": "https://www.etsy.com/listing/4323428110/"
             }
           ]
         },
@@ -138,6 +167,11 @@
               "store": "Etsy",
               "type": "Poster Print",
               "url": "https://www.etsy.com/listing/4320732650/"
+            },
+            {
+              "store": "Etsy",
+              "type": "Graphic Tee",
+              "url": "https://www.etsy.com/listing/4323348849/"
             }
           ]
         }
