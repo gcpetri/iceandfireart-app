@@ -24,16 +24,17 @@
           </div>
         </div>
         <div class="modal-footer border-0">
-          <div class="row justify-content-around">
-            @for (link of _piece.links; track $index) {
-              <div class="col-auto pe-0">
+          <div class="row justify-content-end">
+            @for (link of _piece.links; track link) {
+              @let iconKey = link?.type ?? link.store;
+              <div class="col-auto pe-0 mb-2">
                 <a
                   href="{{ link.url }}"
                   target="_blank"
                   class="btn icon-link"
                   [style.background-color]="colorMap[link.store]"
                 >
-                  <fa-icon [icon]="iconMap[link.store]"></fa-icon>{{ link.type.length > 0 ? '&nbsp;&nbsp;' + link.type : '' }}
+                  <fa-icon [icon]="getMatchingIcon(iconKey)"></fa-icon>{{ (link?.type ?? "").length > 0 ? '&nbsp;&nbsp;' + link?.type : '' }}
                 </a>
               </div>
             }

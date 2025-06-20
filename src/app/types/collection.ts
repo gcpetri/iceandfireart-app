@@ -11,7 +11,7 @@ export interface Piece {
   year: number;
   links: {
     store: string;
-    type: string;
+    type: string|null;
     url: string;
   }[]
 }
