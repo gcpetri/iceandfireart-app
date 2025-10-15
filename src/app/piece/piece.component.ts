@@ -2,7 +2,7 @@ import { Component, input } from '@angular/core';
 import { Piece } from '../types/collection';
 import { faEtsy, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faCircle, faFileArrowDown, faNoteSticky, faShirt } from '@fortawesome/free-solid-svg-icons';
+import { faCircle, faFileArrowDown, faNoteSticky, faPaintBrush, faShirt } from '@fortawesome/free-solid-svg-icons';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 @Component({
@@ -21,11 +21,12 @@ export class PieceComponent {
     'TikTok': faTiktok,
     'Poster Print': faNoteSticky,
     'Graphic Tee': faShirt,
-    'Digital Download': faFileArrowDown
+    'Digital Download': faFileArrowDown,
+    'Original': faPaintBrush
   }
 
   colorMap = {
-    'Etsy': '#ffa000',
+    'Etsy': '#e6beae',
     'Instagram': '#70a0af',
     'TikTok': '#331e38'
   }

@@ -1,7 +1,7 @@
 import { Component, input } from '@angular/core';
 import { Commissions } from '../types/commissions';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faClock, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { faClock, faInfoCircle, faPaintBrush } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-commissions',
@@ -15,5 +15,6 @@ import { faClock, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 export class CommissionsComponent {
   faClock = faClock;
   faInfoCircle = faInfoCircle;
+  faPaintBrush = faPaintBrush;
   commissions = input.required<Commissions>();
 }

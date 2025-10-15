@@ -36,4 +36,11 @@ html, body {
     font-family: 'Roboto Mono', monospace;
     --bs-body-font-family: 'Roboto Mono', monospace !important;
   }
+
+  // body.modal-open {
+  //   position: fixed;
+  //   top: -moz-calc(var(--scroll-y) * 1px); /* Firefox */
+  //   top: calc(var(--scroll-y) * -1px); /* Other browsers */
+  //   overflow: hidden !important;
+  // }
 }

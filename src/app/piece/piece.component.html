@@ -1,4 +1,5 @@
-<div class="modal fade" id="pieceModal" tabindex="-1" aria-labelledby="pieceModalLabel" aria-hidden="true">
+<div class="modal fade" id="pieceModal" aria-labelledby="pieceModalLabel" aria-hidden="true"
+  data-bs-backdrop="static" data-bs-keyboard="false">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header border-0">
@@ -16,18 +17,16 @@
       @if (_piece) {
         <div class="modal-body border-0">
           <div class="row">
-            <img [src]="_piece.imagePath" class="card-img-top" alt="...">
+            <img [src]="_piece.imagePath" class="card-img-top" alt="..." style="max-height: 60vh">
           </div>
           <div class="row">
             <p class="mb-0 mt-4">{{ _piece.year }}</p>
             <p>{{ _piece.description }}</p>
           </div>
-        </div>
-        <div class="modal-footer border-0">
           <div class="row justify-content-end">
             @for (link of _piece.links; track link) {
               @let iconKey = link?.type ?? link.store;
-              <div class="col-auto pe-0 mb-2">
+              <div class="col-auto ps-0 mb-2">
                 <a
                   href="{{ link.url }}"
                   target="_blank"

@@ -1,4 +1,5 @@
 @use 'variables' as vars;
+@use "sass:color";
 
 .commissions-container {
   background: vars.$primary;
@@ -7,4 +8,14 @@
 
 fa-icon {
   color: whitesmoke;
+}
+
+.btn {
+  background: color.adjust(vars.$secondary, $lightness: -10%);
+  color: whitesmoke;
+  border: none;
+
+  &:hover {
+    background: vars.$secondary;
+  }
 }

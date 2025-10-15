@@ -151,6 +151,20 @@
               "url": "https://www.etsy.com/listing/4320165574/"
             }
           ]
+        },
+        {
+          "name": "Evening In Santorini",
+          "imagePath": "assets/images/art/evening-in-santorini.jpg",
+          "description": "Sunset & Wine - Acrylic on Canvas",
+          "artist": "Clara",
+          "year": 2025,
+          "links": [
+            {
+              "store": "Etsy",
+              "type": "Original",
+              "url": "https://www.etsy.com/listing/4381678064/"
+            }
+          ]
         }
       ]
     },{
@@ -222,8 +236,9 @@
     }
   ],
   "commissions": {
-    "info": "We are currently accepting commissions! If you have an idea for a piece of art, please reach out to us via email or Instagram. We would love to work with you to create something special.",
+    "info": "We are currently accepting commissions!!! If you have an idea for a piece of art, please reach out to us via email or our Google Form linked below :) We would love to work with you to create something special!",
+    "formLink": "https://docs.google.com/forms/d/e/1FAIpQLSds2H4AjBF62f3-PO5xJkvRQH95E5Vd9tKdzmlHzfG8aE3cjA/viewform",
     "note": "Please specify which artist you would like to work with you on your masterpiece (Clara, Greg, or both!)",
-    "timeline": "We will reach out with progress updates along with way, first being an initial sketch for your approval. Please note that we are not full-time artists (yet, hopefully) so the timeline is dependent on our schedule but we will work diligently to complete your piece in a timely manner!"
+    "timeline": "We will reach out with progress updates along with way, first being an initial sketch for your approval. Please note that we are not full-time artists ~yet (hopefully)~ so the timeline is dependent on our schedule but we will work diligently to complete your piece in a timely manner!"
   }
 }
